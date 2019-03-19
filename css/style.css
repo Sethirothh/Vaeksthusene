@@ -4,3 +4,8 @@ body {
 	box-sizing: border-box;
 	background-color: aqua;
 }
+:root {
+	--black:;
+	--red:;
+	--blue:;
+}
