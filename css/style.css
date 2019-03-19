@@ -7,7 +7,7 @@
 }
 :root {
 	--black:#e3e3e3;
-	--red:;
+	--red:rgba(255,0,0,0.5);
 	--blue:;
 	--white:;
 }
