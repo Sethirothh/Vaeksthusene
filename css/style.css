@@ -1,11 +1,16 @@
-body {
+* {
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-	background-color: aqua;
+	transition:.5s;
+	font-family:'Helvetica', sans-serif;
 }
 :root {
-	--black:;
+	--black:#e3e3e3;
 	--red:;
 	--blue:;
+	--white:;
+}
+body {
+	background-color:var(--black);
 }
