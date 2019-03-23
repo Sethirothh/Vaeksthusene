@@ -9,7 +9,7 @@ let s4 = "Svar4";
 //Næste side
 let next = "second";
 
-$('#question').append(
+$('#question2').append(
   //Ting der ændres i innerHTML
   "<div class='picwrap'>" +
   "<img src='img/" + pic1 + ".jpg' alt='" + pic1 + "'></div>"
@@ -25,7 +25,7 @@ $('button').click(function(){
   //Definer hvilket af de fire svarmuligheder der er rigtige
   if ($(this).val() == "one") {
     console.log("Right");
-    $('#question').append(
+    $('#question2').append(
       //Ting der ændres i innerHTML -Success
       "<div class='success'><h1>YOU DID IT!</h2><br>" +
       "<p>Svaret kan uddybes her</p>"+
