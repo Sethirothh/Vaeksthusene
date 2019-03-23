@@ -44,5 +44,4 @@ $('button').click(function(){
       location.reload(true);
     });
   }
-  console.log($(this).val())
 })
