@@ -1,11 +1,11 @@
 let pic1 = "avocado-tree";
 //q1 = Spørgsmål
 //s1-4 = svarmulighederne
-let q1 = "Spørgsmålet skal stå her";
-let s1 = "Svar1";
-let s2 = "Svar2";
-let s3 = "Svar3";
-let s4 = "Svar4";
+let q1 = "Hvad er hungersnød?";
+let s1 = "At folk mangler mad og er underernæret";
+let s2 = "At de ikke har råd til at spise på restaurant";
+let s3 = "At der kun bliver serveret Grøntsager og Ris";
+let s4 = "At man er veganer og ikke har råd til grøntsager";
 //Næste side
 let next = "second";
 
