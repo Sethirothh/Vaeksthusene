@@ -30,7 +30,7 @@ $('#question .picwrap img').click(function(){
 });
 $('#question button').click(function(){
   //Definer hvilket af de fire svarmuligheder der er rigtige
-  if ($(this).val() == "one") {
+  if ($(this).val() == afrika[0].correct) {
     console.log("Right");
     $('#question').append(
       //Ting der ændres i innerHTML -Success
@@ -61,14 +61,18 @@ $('#question button').click(function(){
     $('.point').append("<p>"+ point +"</p>");
     $('.error').addClass('remove');
     $('.question').removeClass("open");
-    return false;
   })
   $('#success').click(function(){
     point = point+10;
     $('.point').html("<p>"+ point +"</p>");
-    $('#question').empty().addClass("remove");
-    $('#question2').removeClass("remove");
+    $('#question').addClass("transition");
     $('.question').removeClass("open");
+    $('#question2').removeClass("remove");
+    $('#question').addClass("remove");
+    // setTimeout(function(){
+    //   $('#question').addClass("remove");
+    //   $('#question2').addClass("transition-in");
+    // }, 1000)
     console.log(point);
   })
 })

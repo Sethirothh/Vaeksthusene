@@ -9,7 +9,8 @@ var afrika = [
     svar3: 'At der kun bliver serveret Grøntsager og Ris',
     svar4: 'At man er veganer og ikke har råd til grøntsager',
     uddybelse: '',
-    next: 'second'
+    next: 'second',
+    correct: 'one'
   },
   {
     img: 'avocado-tree',
