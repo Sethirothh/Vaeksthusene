@@ -8,18 +8,30 @@ let s3 = "At der kun bliver serveret Grøntsager og Ris";
 let s4 = "At man er veganer og ikke har råd til grøntsager";
 //Næste side
 let next = "second";
-
 $('#question').append(
   //Ting der ændres i innerHTML
-  "<div class='picwrap'>" +
+  "<div class='picwrap'><p>Find den her plante, tryk derefter på billedet</p>" +
   "<img src='img/" + pic1 + ".jpg' alt='" + pic1 + "'></div>"
   + "<div class='question'><h2>" + q1 + "</h2>"+
   "<button value='one'>"+s1+"</button><button value='two'>"+s2+"</button>" +
   "<button value='three'>"+s3+"</button><button value='four'>"+s4+"</button>" +
   "</div>"
 );
-$('h2').click(function(){
-      $('.question').toggleClass("open");
+$('.picwrap img').click(function(){
+  var txt;
+   var question = prompt("Hvor er den her plante fra?", "Afrika");
+   if (question == null || question == "") {
+     txt = "Husk at svar.";
+
+        console.log("answer");
+   } else if (question == "Asien") {
+        $('.question').toggleClass("open");
+        txt = "Good Job! :D ";
+   }else{
+     txt = "forkert, prøv igen!";
+   }
+   alert(txt);
+
 });
 $('button').click(function(){
   //Definer hvilket af de fire svarmuligheder der er rigtige

@@ -26,6 +26,7 @@ h1 {
   align-items: center;
   text-decoration:none;
   color:var(--black);
+  font-family:var(--heading);
   margin:20px;
   width:200px;
   height:60px;
@@ -41,7 +42,19 @@ h1 {
 .picwrap {
   height:80vh;
   width:100%;
-
+  position:relative;
+  display:flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.picwrap > p {
+  display:block;
+  position:absolute;
+  font-size:32px;
+  width:100%;
+  color:white;
+  text-align:center;
+  background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
 }
 .picwrap > img {
   height:100%;
