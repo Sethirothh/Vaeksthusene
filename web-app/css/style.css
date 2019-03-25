@@ -38,6 +38,7 @@ h1 {
   width:100%;
   height:80vh;
   overflow:hidden;
+  animation:.4s return ease;
 }
 .picwrap {
   height:80vh;
@@ -103,6 +104,25 @@ h1 {
   background-color:var(--green);
   animation:.5s return ease;
 }
+.point {
+  background:var(--black);
+  position:absolute;
+  margin:20px;
+  height:2em;
+  width:200px;
+  line-height:2em;
+  text-align:center;
+  top:0;
+  right:0;
+  font-size:32px;
+  color:var(--white);
+  border-radius:10px;
+  z-index:9000;
+  font-family:var(--heading);
+}
+.remove {
+  display:none !important;
+}
 .success a {
   text-decoration: none;
   color:var(--black);
@@ -114,6 +134,9 @@ h1 {
   outline:0;
   font-size:32px;
   border-radius:5px;
+}
+.btn {
+  background-
 }
 .success p {
   font-size:32px;

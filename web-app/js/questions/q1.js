@@ -1,39 +1,34 @@
-let pic1 = "avocado-tree";
-//q1 = Spørgsmål
-//s1-4 = svarmulighederne
-let q1 = "Hvad er hungersnød?";
-let s1 = "At folk mangler mad og er underernæret";
-let s2 = "At de ikke har råd til at spise på restaurant";
-let s3 = "At der kun bliver serveret Grøntsager og Ris";
-let s4 = "At man er veganer og ikke har råd til grøntsager";
-//Næste side
-let next = "second";
+
+var point = 0;
+
+$('.point').append("<p>"+ point +"</p>");
 $('#question').append(
   //Ting der ændres i innerHTML
   "<div class='picwrap'><p>Find den her plante, tryk derefter på billedet</p>" +
-  "<img src='img/" + pic1 + ".jpg' alt='" + pic1 + "'></div>"
-  + "<div class='question'><h2>" + q1 + "</h2>"+
-  "<button value='one'>"+s1+"</button><button value='two'>"+s2+"</button>" +
-  "<button value='three'>"+s3+"</button><button value='four'>"+s4+"</button>" +
+  "<img src='img/" + afrika[0].img + ".jpg' alt='" + afrika[0].img + "'></div>"
+  + "<div class='question'><h2>" + afrika[0].question + "</h2>"+
+  "<button value='one'>"+afrika[0].svar1+"</button><button value='two'>"+afrika[0].svar3+"</button>" +
+  "<button value='three'>"+afrika[0].svar2+"</button><button value='four'>"+afrika[0].svar4+"</button>" +
   "</div>"
 );
-$('.picwrap img').click(function(){
+$('#question .picwrap img').click(function(){
   var txt;
    var question = prompt("Hvor er den her plante fra?", "Afrika");
    if (question == null || question == "") {
      txt = "Husk at svar.";
-
         console.log("answer");
-   } else if (question == "Asien") {
+        alert(txt);
+   } else if (question == "Asien" || question == "asien") {
         $('.question').toggleClass("open");
-        txt = "Good Job! :D ";
+        point = point + 5;
+        $('.point').html('<p>'+point+'</p>')
    }else{
      txt = "forkert, prøv igen!";
+     alert(txt);
    }
-   alert(txt);
 
 });
-$('button').click(function(){
+$('#question button').click(function(){
   //Definer hvilket af de fire svarmuligheder der er rigtige
   if ($(this).val() == "one") {
     console.log("Right");
@@ -41,19 +36,39 @@ $('button').click(function(){
       //Ting der ændres i innerHTML -Success
       "<div class='success'><h1>YOU DID IT!</h2><br>" +
       "<p>Svaret kan uddybes her</p>"+
-      "<a href='"+next+".html' class='btnLink'>Næste Spørgsmål</a></div>"
+      "<div class='btn' id='success'>Næste Spørgsmål</div></div>"
     );
   } else {
     console.log("Wrong");
-    $('#question').append(
-      //Ting der ændres i innerHTML -Error
-      "<div class='error'><h1>YOU WRONG BOY!</h2><br>" +
-      "<p>Svaret kan uddybes her</p>"+
-      "<button class='reload'>Prøv Igen</button></div>"
-    );
+    if ($('.error').hasClass("remove") == true) {
 
-    $('.reload').click(function(){
-      location.reload(true);
-    });
+      $('.error').removeClass('remove');
+    }else {
+      $('#question').append(
+        //Ting der ændres i innerHTML -Error
+        "<div class='error'><h1>YOU WRONG BOY!</h2><br>" +
+        "<p>Svaret kan uddybes her</p>"+
+        "<div id='fail' class='reload'>Prøv Igen</button></div>"
+      );
+    }
+
+
   }
+  $('#fail').click(function(){
+    console.log("clicked");
+    point = point-5;
+      $('.point').empty();
+    $('.point').append("<p>"+ point +"</p>");
+    $('.error').addClass('remove');
+    $('.question').removeClass("open");
+    return false;
+  })
+  $('#success').click(function(){
+    point = point+10;
+    $('.point').html("<p>"+ point +"</p>");
+    $('#question').empty().addClass("remove");
+    $('#question2').removeClass("remove");
+    $('.question').removeClass("open");
+    console.log(point);
+  })
 })
