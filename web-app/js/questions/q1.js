@@ -1,7 +1,6 @@
 
-var point = 0;
+$('.point').html("<p>"+ point +"</p>");
 
-$('.point').append("<p>"+ point +"</p>");
 $('#question').append(
   //Ting der ændres i innerHTML
   "<div class='picwrap'><p>Find den her plante, tryk derefter på billedet</p>" +
@@ -20,7 +19,6 @@ $('#question .picwrap img').click(function(){
         alert(txt);
    } else if (question == "Asien" || question == "asien") {
         $('.question').toggleClass("open");
-        point = point + 5;
         $('.point').html('<p>'+point+'</p>')
    }else{
      txt = "forkert, prøv igen!";
@@ -36,7 +34,7 @@ $('#question button').click(function(){
       //Ting der ændres i innerHTML -Success
       "<div class='success'><h1>YOU DID IT!</h2><br>" +
       "<p>Svaret kan uddybes her</p>"+
-      "<div class='btn' id='success'>Næste Spørgsmål</div></div>"
+      "<div class='btn' id='successOne'>Næste Spørgsmål</div></div>"
     );
   } else {
     console.log("Wrong");
@@ -62,10 +60,11 @@ $('#question button').click(function(){
     $('.error').addClass('remove');
     $('.question').removeClass("open");
   })
-  $('#success').click(function(){
+  $('#successOne').click(function(){
     point = point+10;
     $('.point').html("<p>"+ point +"</p>");
     $('#question').addClass("transition");
+    $('.success').addClass('remove');
     $('.question').removeClass("open");
     $('#question2').removeClass("remove");
     $('#question').addClass("remove");
