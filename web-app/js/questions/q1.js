@@ -4,10 +4,10 @@ $('.point').html("<p>"+ point +"</p>");
 $('#question').append(
   //Ting der ændres i innerHTML
   "<div class='picwrap'><p>Find den her plante, tryk derefter på billedet</p>" +
-  "<img src='img/" + afrika[0].img + ".jpg' alt='" + afrika[0].img + "'></div>"
-  + "<div class='question'><h2>" + afrika[0].question + "</h2>"+
-  "<button value='one'>"+afrika[0].svar1+"</button><button value='two'>"+afrika[0].svar3+"</button>" +
-  "<button value='three'>"+afrika[0].svar2+"</button><button value='four'>"+afrika[0].svar4+"</button>" +
+  "<img src='img/" + afrika[1].img + ".jpg' alt='" + afrika[1].img + "'></div>"
+  + "<div class='question'><h2>" + afrika[1].question + "</h2>"+
+  "<button value='one'>"+afrika[1].svar1+"</button><button value='two'>"+afrika[1].svar3+"</button>" +
+  "<button value='three'>"+afrika[1].svar2+"</button><button value='four'>"+afrika[1].svar4+"</button>" +
   "</div>"
 );
 $('#question .picwrap img').click(function(){
@@ -28,7 +28,7 @@ $('#question .picwrap img').click(function(){
 });
 $('#question button').click(function(){
   //Definer hvilket af de fire svarmuligheder der er rigtige
-  if ($(this).val() == afrika[0].correct) {
+  if ($(this).val() == afrika[1].correct) {
     console.log("Right");
     $('#question').append(
       //Ting der ændres i innerHTML -Success
