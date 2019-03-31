@@ -1,5 +1,4 @@
 
-
 var afrika = [
   {
     img: 'avocado-tree',
@@ -13,7 +12,7 @@ var afrika = [
     correct: 'one'
   },
   {
-    img: 'avocado-tree',
+    img: 'rosmarin',
     question: 'Hvordan påvirker klimaforandringerne hungersnøden?',
     svar1: 'Positivt',
     svar2: 'Negativt',
@@ -24,7 +23,7 @@ var afrika = [
     correct: 'two'
   },
   {
-    img: 'avocado-tree',
+    img: 'tequila',
     question: 'Hvad er hungersnød?',
     svar1: 'At folk mangler mad og er underernæret',
     svar2: 'At de ikke har råd til at spise på restaurant',

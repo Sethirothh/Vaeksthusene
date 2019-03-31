@@ -10,14 +10,16 @@ $('#question').append(
   "<button value='three'>"+afrika[1].svar3+"</button><button value='four'>"+afrika[1].svar4+"</button>" +
   "</div>"
 );
+
+
 $('#question .picwrap img').click(function(){
   var txt;
-   var question = prompt("Hvor er den her plante fra?", "Afrika");
+   var question = prompt("Hvad hedder denne plante?", "Svar her");
    if (question == null || question == "") {
      txt = "Husk at svar.";
         console.log("answer");
         alert(txt);
-   } else if (question == "Asien" || question == "asien") {
+   } else if (question == "Rosmarin" || question == "rosmarin") {
         $('.question').toggleClass("open");
         $('.point').html('<p>'+point+'</p>')
    }else{
@@ -26,6 +28,9 @@ $('#question .picwrap img').click(function(){
    }
 
 });
+
+
+
 $('#question button').click(function(){
   //Definer hvilket af de fire svarmuligheder der er rigtige
   if ($(this).val() == afrika[1].correct) {
@@ -49,14 +54,12 @@ $('#question button').click(function(){
         "<div id='failOne' class='reload'>Prøv Igen</button></div>"
       );
     }
-
-
   }
+
   $('#failOne').click(function(){
     console.log("clicked");
     point = point-5;
-      $('.point').empty();
-    $('.point').append("<p>"+ point +"</p>");
+    $('.point').html("<p>"+ point +"</p>");
     $('.error').addClass('remove');
     $('.question').removeClass("open");
   })
