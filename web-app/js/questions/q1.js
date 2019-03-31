@@ -32,7 +32,7 @@ $('#question button').click(function(){
     console.log("Right");
     $('#question').append(
       //Ting der ændres i innerHTML -Success
-      "<div class='success'><h1>YOU DID IT!</h2><br>" +
+      "<div class='success'><div><img src='img/flueben.png'></div><h1>KORREKT!</h2><br>" +
       "<p>Svaret kan uddybes her</p>"+
       "<div class='btn' id='successOne'>Næste Spørgsmål</div></div>"
     );
@@ -44,15 +44,15 @@ $('#question button').click(function(){
     }else {
       $('#question').append(
         //Ting der ændres i innerHTML -Error
-        "<div class='error'><h1>YOU WRONG BOY!</h2><br>" +
+        "<div class='error'><div><img src='img/kryds.png'></div><h1>FORKERT!</h2><br>" +
         "<p>Svaret kan uddybes her</p>"+
-        "<div id='fail' class='reload'>Prøv Igen</button></div>"
+        "<div id='failOne' class='reload'>Prøv Igen</button></div>"
       );
     }
 
 
   }
-  $('#fail').click(function(){
+  $('#failOne').click(function(){
     console.log("clicked");
     point = point-5;
       $('.point').empty();
