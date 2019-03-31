@@ -24,14 +24,14 @@ var afrika = [
   },
   {
     img: 'tequila',
-    question: 'Hvad er hungersnød?',
-    svar1: 'At folk mangler mad og er underernæret',
-    svar2: 'At de ikke har råd til at spise på restaurant',
-    svar3: 'At der kun bliver serveret Grøntsager og Ris',
-    svar4: 'At man er veganer og ikke har råd til grøntsager',
+    question: 'Hvor mange folkeskolebørk går underernærede og sultne i skole hver dag?',
+    svar1: '31 millioner',
+    svar2: '47 millioner',
+    svar3: '66 millioner',
+    svar4: '90 millioner',
     uddybelse: '',
     next: 'third',
-    correct: 'one'
+    correct: 'three'
   },
   {
     img: 'avocado-tree',
