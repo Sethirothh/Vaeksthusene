@@ -8,7 +8,7 @@ body {
 
 
   background-image:url('../img/bcg/topblade.png'), url('../img/bcg/bottomblade.png');
-  background-position:top left, bottom right;
+  background-position:top, bottom;
   background-color:var(--bcg);
   background-repeat:no-repeat;
   background-size:100%;
@@ -93,34 +93,54 @@ input {
 }
 .question {
   width:100%;
-  height:80vh;
+  height:50vh;
   position:absolute;
   z-index:333;
-  bottom:-80vh;
-  background-color:var(--white);
+  bottom:-50vh;
+  border-top-left-radius:15px;
+  border-top-right-radius:15px;
+  border:4px solid var(--greenQ);
+  border-bottom:0;
+  /* Background */
+  background-color:var(--greenSvar);
+  background-image:url('../img/bcg/bottomblade.png');
+  background-repeat: no-repeat;
+  background-position:bottom;
 }
 .question h2 {
-  height:20vh;
   font-size:40px;
-  color:var(--black);
+  width:85%;
+  margin:20px auto;
+  color:var(--white);
+  font-family:var(--heading);
   display:flex;
+  border-radius:15px;
+  background-color:var(--greenQ);
   text-align:center;
   justify-content: center;
   align-items: center;
+  padding:20px;
+
+}
+.btnWrap{
+  width:100%;
+  display:flex;
+  justify-content: center;
+  flex-wrap:wrap;
 }
 .open{
   bottom:0;
 }
-.question button {
-  width:100%;
-  height:15vh;
-  font-size:30px;
-  background-color:var(--green);
-  border:0;
+.btnWrap button {
+  width:40%;
+  height:10vh;
+  margin:20px;
+  font-size:24px;
+  border-radius:15px;
+  border:4px solid var(--orange);
+  background-color:var(--white);
+  padding:20px;
   outline:0;
-}
-.question button:nth-child(2n) {
-  background-color:var(--yellow);
 }
 .success {
   position:absolute;

@@ -6,9 +6,9 @@ $('#question2').append(
   "<div class='picwrap'><p>Find den her plante, tryk derefter på billedet</p>" +
   "<img src='img/" + afrika[2].img + ".jpg' alt='" + afrika[2].img + "'></div>"
   + "<div class='question'><h2>" + afrika[2].question + "</h2>"+
-  "<button value='one'>"+afrika[2].svar1+"</button><button value='two'>"+afrika[2].svar2+"</button>" +
+  "<div class='btnWrap'><button value='one'>"+afrika[2].svar1+"</button><button value='two'>"+afrika[2].svar2+"</button>" +
   "<button value='three'>"+afrika[2].svar3+"</button><button value='four'>"+afrika[2].svar4+"</button>" +
-  "</div>"
+  "</div></div>"
 );
 
 
