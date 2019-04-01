@@ -13,8 +13,12 @@ header {
 	position:absolute;
 	z-index: -1;
 	height:80vh;
+	padding:30px;
 	width:100%;
 	background-size:cover;
 	background-repeat:no-repeat;
 	background:fixed;
+}
+header > h1 {
+	font-family:var(--heading);
 }
