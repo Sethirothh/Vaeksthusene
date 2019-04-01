@@ -1,5 +1,6 @@
 var point = 0;
-
+const fail = 5;
+const success = 20;
 $('.point').append("<p>"+ point +"</p>");
 
 $('#prequestion').append(
@@ -37,13 +38,13 @@ if ($(this).val() == afrika[0].correct) {
 }
 $('#failPre').click(function(){
   console.log("clicked");
-  point = point-5;
+  point = point-fail;
   $('.point').html("<p>"+ point +"</p>");
   $('.error').addClass('remove');
   $('.question').removeClass("open");
 })
 $('#successPre').click(function(){
-  point = point+10;
+  point = point+success;
   $('.point').html("<p>"+ point +"</p>");
   $('#question').addClass("transition");
   $('.question').removeClass("open");

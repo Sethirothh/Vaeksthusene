@@ -25,8 +25,8 @@ $('#question .picwrap img').click(function(){
    }else{
      txt = "forkert, prøv igen!";
      alert(txt);
-   }
 
+   }
 });
 
 
@@ -58,13 +58,13 @@ $('#question button').click(function(){
 
   $('#failOne').click(function(){
     console.log("clicked");
-    point = point-5;
+    point = point-fail;
     $('.point').html("<p>"+ point +"</p>");
     $('.error').addClass('remove');
     $('.question').removeClass("open");
   })
   $('#successOne').click(function(){
-    point = point+10;
+    point = point+success;
     $('.point').html("<p>"+ point +"</p>");
     $('#question').addClass("transition");
     $('.success').addClass('remove');

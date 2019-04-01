@@ -58,13 +58,13 @@ $('#question2 button').click(function(){
 
   $('#failTwo').click(function(){
     console.log("clicked");
-    point = point-5;
+    point = point-fail;
     $('.point').html("<p>"+ point +"</p>");
     $('.error').addClass('remove');
     $('.question').removeClass("open");
   })
   $('#successTwo').click(function(){
-    point = point+10;
+    point = point+success;
     $('.point').html("<p>"+ point +"</p>");
     $('#question').addClass("transition");
     $('.success').addClass('remove');

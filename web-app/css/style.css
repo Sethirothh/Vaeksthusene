@@ -215,6 +215,11 @@ input {
   height:100%;
   background-color:var(--blue);
   animation:.5s return ease;
+
+      background-image:url('../img/bcg/blaatop.png'), url('../img/bcg/blaabottom.png');
+      background-position:top left, bottom right;
+      background-repeat:no-repeat;
+      background-size:100%;
 }
 .error > h1 {
   color:var(--black);
