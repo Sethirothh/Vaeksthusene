@@ -12,13 +12,22 @@
 header {
 	position:absolute;
 	z-index: -1;
-	height:80vh;
+	height:100vh;
 	padding:30px;
 	width:100%;
 	background-size:cover;
-	background-repeat:no-repeat;
-	background:fixed;
+	background:fixed no-repeat;
 }
 header > h1 {
 	font-family:var(--heading);
+	position:absolute;
+	top:30px;
+	right:30px;
+
+}
+header > img {
+	position:absolute;
+	top:30px;
+	left:30px;
+	width:250px;
 }
