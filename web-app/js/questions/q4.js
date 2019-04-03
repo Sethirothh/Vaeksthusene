@@ -34,11 +34,11 @@ $('#question4 button').click(function(){
   //Definer hvilket af de fire svarmuligheder der er rigtige
   if ($(this).val() == afrika[4].correct) {
     console.log("Right");
-    $('#question3').append(
+    $('#question4').append(
       //Ting der ændres i innerHTML -Success
       "<div class='success'><div><img src='img/flueben.png'></div><h1>KORREKT!</h2><br>" +
       "<p>Svaret kan uddybes her</p>"+
-      "<div class='btn' id='successTwo'>Næste Spørgsmål</div></div>"
+      "<div class='btn' id='successFour'>Næste Spørgsmål</div></div>"
     );
   } else {
     console.log("Wrong");
@@ -50,7 +50,7 @@ $('#question4 button').click(function(){
         //Ting der ændres i innerHTML -Error
         "<div class='error'><div><img src='img/kryds.png'></div><h1>FORKERT!</h2><br>" +
         "<p>Svaret kan uddybes her</p>"+
-        "<div id='failTwo' class='reload'>Prøv Igen</button></div>"
+        "<div id='failFour' class='reload'>Prøv Igen</button></div>"
       );
     }
   }
@@ -68,8 +68,8 @@ $('#question4 button').click(function(){
     $('#question').addClass("transition");
     $('.success').addClass('remove');
     $('.question').removeClass("open");
-    $('#question4').removeClass("remove");
-    $('#question3').addClass("remove");
+    $('#question5').removeClass("remove");
+    $('#question4').addClass("remove");
     // setTimeout(function(){
     //   $('#question').addClass("remove");
     //   $('#question2').addClass("transition-in");
