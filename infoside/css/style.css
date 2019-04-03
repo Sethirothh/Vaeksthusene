@@ -1,5 +1,40 @@
 @import url("../../cssglobal/style.css");
 
+header {
+	position:absolute;
+	z-index: -1;
+	height:100vh;
+	padding:30px;
+	width:100%;
+	background-size:cover;
+	background:fixed no-repeat;
+}
+header::after {
+	content:'FoodLab';
+	width:100%;
+	height:50vh;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	color:var(--darkblue);
+	font-family:var(--heading);
+	font-size:120px;
+}
+header > h1 {
+	font-family:var(--heading);
+	position:absolute;
+	top:30px;
+	right:30px;
+
+}
+header > .logo {
+	position:absolute;
+	top:30px;
+	left:30px;
+	display:none;
+	width:250px;
+}
+
 .wrapper{
 	background-image:url('../img/forgrund.svg');
 	height:300vh;
@@ -17,28 +52,7 @@ main {
 }
 main > .gif {
 	position:absolute;
-	top:0;
-	right:0;
-}
-header {
-	position:absolute;
-	z-index: -1;
-	height:100vh;
-	padding:30px;
-	width:100%;
-	background-size:cover;
-	background:fixed no-repeat;
-}
-header > h1 {
-	font-family:var(--heading);
-	position:absolute;
-	top:30px;
-	right:30px;
-
-}
-header > img {
-	position:absolute;
-	top:30px;
-	left:30px;
-	width:250px;
+	top:-229px;
+	right:500px;
+	width:200px;
 }
