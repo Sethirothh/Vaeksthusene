@@ -18,7 +18,7 @@ $('#question6 .picwrap img').click(function(){
      txt = "Husk at svar.";
         console.log("answer");
         alert(txt);
-   } else if (question == "Sort peber" || question == "sort peber") {
+   } else if (question == "Ris" || question == "ris") {
         $('.question').toggleClass("open");
         $('.point').html('<p>'+point+'</p>')
    }else{
@@ -38,7 +38,7 @@ $('#question6 button').click(function(){
       //Ting der ændres i innerHTML -Success
       "<div class='success'><div><img src='img/flueben.png'></div><h1>KORREKT!</h2><br>" +
       "<p>Svaret kan uddybes her</p>"+
-      "<div class='btn' id='successFive'>Næste Spørgsmål</div></div>"
+      "<div class='btn' id='successSix'>Næste Spørgsmål</div></div>"
     );
   } else {
     console.log("Wrong");
@@ -50,26 +50,38 @@ $('#question6 button').click(function(){
         //Ting der ændres i innerHTML -Error
         "<div class='error'><div><img src='img/kryds.png'></div><h1>FORKERT!</h2><br>" +
         "<p>Svaret kan uddybes her</p>"+
-        "<div id='failFive' class='reload'>Prøv Igen</button></div>"
+        "<div id='failSix' class='reload'>Prøv Igen</button></div>"
       );
     }
   }
 
-  $('#failFive').click(function(){
+  $('#failSix').click(function(){
     console.log("clicked");
     point = point-fail;
     $('.point').html("<p>"+ point +"</p>");
     $('.error').addClass('remove');
     $('.question').removeClass("open");
   })
-  $('#successFive').click(function(){
+  $('#successSix').click(function(){
     point = point+success;
-    $('.point').html("<p>"+ point +"</p>");
-    $('#question').addClass("transition");
+    $('.point').addClass('remove');
     $('.success').addClass('remove');
     $('.question').removeClass("open");
     $('#success').removeClass("remove");
     $('#question6').addClass("remove");
+    $('#success').append(
+      //Ting der ændres i innerHTML
+      "<div class='pointSuccess'><div class='successLogo'><img src='img/foodlab-logo.png' alt='logo'></div>" +
+      "<h2>"+ point +" point</h2><br>"+
+      "<div id='brugere'></div>"
+    );
+    var bruger = [{navn:"Julia",point:"140"},{navn:"Camilla",point:"130"},{navn:"Catharina",point:"120"},{navn:"Asger",point:"110"},{navn:"Jesper",point:"100"}];
+
+    for (var i = 0; i < bruger.length; i++) {
+      $('#brugere').append(  "<div class='successEntry'><p>"+bruger[i].navn+"</p>"+
+      "<p>"+bruger[i].point+"</p></div></div>")
+    };
+
     // setTimeout(function(){
     //   $('#question').addClass("remove");
     //   $('#question2').addClass("transition-in");

@@ -18,7 +18,7 @@ $('#question5 .picwrap img').click(function(){
      txt = "Husk at svar.";
         console.log("answer");
         alert(txt);
-   } else if (question == "Sort peber" || question == "sort peber") {
+   } else if (question == "Kokos" || question == "kokos") {
         $('.question').toggleClass("open");
         $('.point').html('<p>'+point+'</p>')
    }else{
