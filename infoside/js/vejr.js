@@ -8,7 +8,7 @@ let aarhus = "https://api.openweathermap.org/data/2.5/weather?q=Aarhus,DK&appid=
     console.log(data); // show what's in the json
   var icon = "img/vejr/" + data.weather[0].icon + ".svg";
   $('header').css({"background-image": "url(" + icon + ")"})
-  .append("<h1>"+data.main.temp.toFixed(2)+"</h1>"
+  .append("<h1>"+data.main.temp.toFixed(0)+" &#8451;</h1>"
 );
 
   }).catch(err => {
