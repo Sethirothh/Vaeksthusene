@@ -18,7 +18,7 @@ $('#question5 .picwrap img').click(function(){
      txt = "Husk at svar.";
         console.log("answer");
         alert(txt);
-   } else if (question == "Sort peber" || question == "sort peber") {
+   } else if (question == "Kokos" || question == "kokos") {
         $('.question').toggleClass("open");
         $('.point').html('<p>'+point+'</p>')
    }else{
@@ -68,8 +68,8 @@ $('#question5 button').click(function(){
     $('#question').addClass("transition");
     $('.success').addClass('remove');
     $('.question').removeClass("open");
-    $('#question5').removeClass("remove");
-    $('#question3').addClass("remove");
+    $('#question6').removeClass("remove");
+    $('#question5').addClass("remove");
     // setTimeout(function(){
     //   $('#question').addClass("remove");
     //   $('#question2').addClass("transition-in");
