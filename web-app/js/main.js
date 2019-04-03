@@ -35,7 +35,7 @@ var afrika = [
   },
   {
     img: 'Pomelo',
-    question: 'Hvilken del af verdenen lider mest af hungersnød?',
+    question: 'Hvilken del af Verden lider mest af hungersnød?',
     svar1: 'Afrika',
     svar2: 'Asien',
     svar3: 'Nordamerika',
@@ -57,25 +57,25 @@ var afrika = [
   },
   {
     img: 'kokos',
-    question: 'Hvor stor en procentdel af børn under 5 år dør årligt på grund af sult?',
-    svar1: '10%',
-    svar2: '25%',
-    svar3: '35%',
-    svar4: '45%',
+    question: 'Hvor mange mennesker over hele Vernden er underernærede i dag?',
+    svar1: '1 ud af 4 (hver fjerde menneske)',
+    svar2: '1 ud af 9 (hver niende menneske)',
+    svar3: '1 ud af 15 (hver femtende menneske)',
+    svar4: '1 ud af 20 (hver tyvende menneske)',
     uddybelse: '',
     next: 'sixth',
-    correct: 'four'
+    correct: 'two'
   },
   {
     img: 'ris',
-    question: 'Hvor stor en procentdel af børn under 5 år dør årligt på grund af sult?',
-    svar1: '10%',
-    svar2: '25%',
-    svar3: '35%',
-    svar4: '45%',
+    question: 'Hvordan kan vi mindske hungersnøden i Verden?',
+    svar1: 'Vi kan ikke gøre noget',
+    svar2: 'Lade u-landene klare problemerne selv',
+    svar3: 'Sætte prisen ned på mad over hele Verden',
+    svar4: 'Sende vores madrester med posten til de fattige',
     uddybelse: '',
     next: 'sixth',
-    correct: 'four'
+    correct: 'three'
   }
 
 ]
