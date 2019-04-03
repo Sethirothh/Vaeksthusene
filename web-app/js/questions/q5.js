@@ -68,8 +68,8 @@ $('#question5 button').click(function(){
     $('#question').addClass("transition");
     $('.success').addClass('remove');
     $('.question').removeClass("open");
-    $('#question5').removeClass("remove");
-    $('#question3').addClass("remove");
+    $('#question6').removeClass("remove");
+    $('#question5').addClass("remove");
     // setTimeout(function(){
     //   $('#question').addClass("remove");
     //   $('#question2').addClass("transition-in");

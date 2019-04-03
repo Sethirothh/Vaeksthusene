@@ -65,6 +65,17 @@ var afrika = [
     uddybelse: '',
     next: 'sixth',
     correct: 'four'
+  },
+  {
+    img: 'ris',
+    question: 'Hvor stor en procentdel af børn under 5 år dør årligt på grund af sult?',
+    svar1: '10%',
+    svar2: '25%',
+    svar3: '35%',
+    svar4: '45%',
+    uddybelse: '',
+    next: 'sixth',
+    correct: 'four'
   }
 
 ]
