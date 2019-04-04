@@ -115,6 +115,7 @@ input {
   color:var(--white);
   font-family:var(--heading);
   display:flex;
+  letter-spacing: 2.5px;
   border-radius:15px;
   background-color:var(--greenQ);
   text-align:center;
