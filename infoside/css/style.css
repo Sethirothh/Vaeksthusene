@@ -9,17 +9,7 @@ header {
 	background-size:cover;
 	background:fixed no-repeat;
 }
-header::after {
-	content:'FoodLab';
-	width:100%;
-	height:50vh;
-	display:flex;
-	justify-content: center;
-	align-items: center;
-	color:var(--darkblue);
-	font-family:var(--heading);
-	font-size:120px;
-}
+
 header > h1 {
 	font-family:var(--heading);
 	position:absolute;
@@ -29,10 +19,9 @@ header > h1 {
 }
 header > .logo {
 	position:absolute;
-	top:30px;
-	left:30px;
-	display:none;
-	width:250px;
+	top:50px;
+	left:50px;
+	width:200px;
 }
 
 .wrapper{
@@ -51,8 +40,94 @@ main {
 	position:relative;
 }
 main > .gif {
-	position:absolute;
-	top:-229px;
-	right:500px;
 	width:200px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+#mand-med-ipad {
+	position:absolute;
+	top:-185px;
+	right:500px;
+}
+#liggende-par {
+	position:absolute;
+	left:200px;
+	top:50px;
+}
+#liggende-par > .gifWrap {
+	position:relative;
+	height:200px;
+	width:200px;
+}
+#liggende-par > .gifWrap > img {
+	position:absolute;
+	left:0;
+}
+
+#liggende-par > .gifWrap > img:nth-child(1) {
+	position:absolute;
+	left:0px;
+	bottom:-10px;
+}
+#liggende-par > .gifWrap > img:nth-child(2) {
+	position:absolute;
+	left:-20px;
+	bottom:5px;
+}
+
+main>.gif>img {
+	width:100%;
+}
+.gif > .txt {
+	width:200%;
+	margin-top:-10px;
+	min-height:80px;
+	cursor:pointer;
+}
+.txt > h2{
+	font-family:var(--heading);
+	display:flex;
+	background-color:var(--white);
+	border:6px solid var(--orange);
+	border-radius:15px;
+	justify-content: center;
+	font-size:40px;
+	color:var(--greenQ);
+	width:100%;
+	height:80px;
+	line-height:80px;
+	position: relative;
+	transition:.6s;
+}
+.txt > h2 {
+	position:relative;
+}
+.txt>h2::after {
+	content:'';
+	position:absolute;
+	width:0;
+	bottom:10px;
+	background-color:var(--black);
+	height:2px;
+	transition:.6s ease;
+}
+.txt:hover > h2::after {
+	width:85%;
+}
+.p-txt {
+	display:block;
+	height:0;
+	background-color:var(--white);
+	border:6px solid var(--orange);
+	opacity:0;
+	width:100%;
+	overflow:hidden;
+}
+.opentxt {
+	opacity:1;
+	border-radius:15px;
+	height:400px !important;
+	width: 180% !important;
 }
