@@ -8,6 +8,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
   <title>UX/SoMe</title>
   <link rel="shortcut icon" href="../cssglobal/favicon.png">
 </head>
@@ -20,8 +22,23 @@
   <div class="gif" id="mand-med-ipad">
   <img src="img/mand-med-ipad.gif" alt="">
   <div class="txt">
-    <h2>Hvad er Foodlab?</h2>
-    <p class="p-txt"></p>
+    <h2>Hvad er Foodlab? <i class="fas fa-arrow-down"></i> </h2>
+    <article class="p-txt">
+
+        <h3>Generel info:</h3> <br>
+        <p>
+          FoodLab er en edutainment web-app, som belyser emnet Food For The World (Hungersnød). Den udspiller sig som en quiz, hvor man både får generel viden om hungersnød i Verden, men derudover også får udforsket Væksthusenes 4 klimazoner og mange interessante planter. Web-app’en er lavet til folkeskole klasser (mere specifikt mellemtrinnet og udskolingen).
+        </p>
+        <p>
+          For at kunne svare på de spørgsmål, som indgår i quizzen, skal eleverne have noget generelt viden om hungersnød inden. Vi har under emnet “Fakta om Hungersnød” linket til 4 sider, hvor svarene kan findes. Da artiklerne er på engelsk, anbefaler vi at lærere oversætter det til mere overskuelig information, som elever kan forstå.
+        </p>
+
+        <h3>  Sådan fungerer den: </h3> <br>
+        <p>
+For at kunne benytte sig af Web-appen, skal man oppe i Væksthusenes café spørge efter en Ipad, da quizzen kun ligger på disse. Herefter starter man blot app’en og følger de instrukser, som der kommer frem. Man går i en automatisk rute fra start til slut gennem Væksthusenes 4 klimazoner, hvor der i hver af dem (i Domen 3) kommer et billede op af en plante, hvorved man skal finde denne, skrive navnet på den, og et spørgsmål om hungersnød vil komme frem. Sådan fortsættes der indtil alle klimazoner er gennemgået og quizzen slut.
+Alt i alt tager quizzen ca. 30 min.
+        </p>
+    </article>
   </div>
   </div>
   <div class="gif" id="liggende-par">
@@ -30,9 +47,51 @@
   <img src="img/tyk-mand.gif" alt="">
   </div>
   <div class="txt">
-    <h2>Fakta om Hungersnød</h2>
-    <p class="p-txt"></p>
+    <h2>Fakta om Hungersnød<i class="fas fa-arrow-down"></i></h2>
+    <article class="p-txt">
+      <p>
+        For at svare på spørgsmålene i web-app’en, skal man have noget generelt viden om hungersnød. Følg disse 4 links, og du får alle svarerne:
+      </p>
+      <ul>
+        <li><a href="https://sustainabledevelopment.un.org/sdg2" target="_blank">Sustainable development goal</a></li>
+        <li><a href="https://www.un.org/sustainabledevelopment/hunger/" target="_blank">Goal 2: Zero Hunger</a></li>
+        <li><a href="https://sustainabledevelopment.un.org/topics/foodagriculture" target="_blank">Food security and nutrition and sustainable agriculture</a></li>
+        <li><a href="https://www.rainforest-alliance.org/issues/food" target="_blank">Food & farming</a></li>
+      </ul>
+    </article>
   </div>
+  </div>
+  <div class="gif" id="mand-med-hund">
+    <img src="img/hund-og-mand.gif" alt="">
+  </div>
+
+
+  <div class="anmeldelser">
+    <h2>Anmeldelser</h2>
+    <div>
+    <div class="anmeldelse-toggle">
+      <img src="img/lotte.svg" alt="" >
+      <div class="anmeldelse" id="an1">
+        <p>"Jeg synes det var sjovere end normal undervisning, men der var rigtig varmt. Vi lærte meget om børn der ikke har det så godt og om planterne. Der var nogle planter jeg ikke havde set før"</p>
+      </div>
+    </div>
+    <div class="anmeldelse-toggle">
+      <img src="img/johan.svg" alt="">
+      <div class="anmeldelse" id="an2">
+        <p>
+          "Vi vandt, så vi er de bedste og det var herre godt og sjovt. Vi vil gerne komme igen og vinde"
+        </p>
+      </div>
+    </div>
+    <div class="anmeldelse-toggle">
+      <img src="img/oskar.svg" alt="" >
+      <div class="anmeldelse" id="an3">
+        <p>
+          "Elevernes udbytte af quizzen var altovervejende. Vi havde formået at få hungersnød emnet integreret i undervisningen for at eleverne var velforberedt på diverse spørgsmål. Elevernes gevinst ved denne quiz var ikke blot sejren, men i forhold til læringsudbyttet, gik de også derfra med ny viden"
+        </p>
+      </div>
+    </div>
+    </div>
   </div>
 </main>
 
@@ -41,6 +100,44 @@
 
 
 </div>
+<footer>
+  <div>
+    <h3>Kontakt</h3>
+    <h4>FoodLab</h4>
+    <p>
+      co/ Botanisk Have og Væksthusene
+Peter Holms Vej
+8000 Aarhus C <br> <br>
+Tlf.: <a href="tel:+4587155415">+45 87155415</a> <br>
+Tlf. Cafeen: <a href="tel:+4587155706">+45 87155706</a>
+    </p>
+  </div>
+  <div>
+    <h3>Åbningstider</h3>
+    <p>
+      (1. oktober – 30. april): <br>
+Mandag-fredag: 9-16 <br>
+Lørdag, søndag og helligdage kl. 10-17
+    </p>
+  </div>
+  <div>
+    <h3>Følg os</h3>
+    <div>
+      <a href="">
+      <i class="fab fa-facebook"></i>
+    </a>
+    <a href="">
+      <i class="fab fa-snapchat-square"></i>
+    </a>
+    <a href="">
+      <i class="fab fa-youtube"></i>
+    </a>
+    <a href="">
+      <i class="fab fa-instagram"></i>
+    </a>
+    </div>
+  </div>
+</footer>
 <script src="js/main.js"></script>
 <script src="js/vejr.js"></script>
 </body>

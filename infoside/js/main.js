@@ -1,3 +1,9 @@
 $('.txt').click(function(){
   $(this).children('.p-txt').toggleClass('opentxt');
 })
+$('.anmeldelse-toggle').mouseover(function(){
+  $(this).children('.anmeldelse').addClass('openanmeldelse');
+})
+$('.anmeldelse-toggle').mouseout(function(){
+  $(this).children('.anmeldelse').removeClass('openanmeldelse');
+})

@@ -49,11 +49,13 @@ main > .gif {
 #mand-med-ipad {
 	position:absolute;
 	top:-185px;
+	z-index:4;
 	right:500px;
 }
 #liggende-par {
 	position:absolute;
 	left:200px;
+	z-index:4;
 	top:50px;
 }
 #liggende-par > .gifWrap {
@@ -76,7 +78,12 @@ main > .gif {
 	left:-20px;
 	bottom:5px;
 }
-
+#mand-med-hund {
+	position:absolute;
+	right:200px;
+	top:50vh;
+	width:250px;
+}
 main>.gif>img {
 	width:100%;
 }
@@ -95,16 +102,16 @@ main>.gif>img {
 	justify-content: center;
 	font-size:40px;
 	color:var(--greenQ);
-	width:100%;
+	width:120%;
 	height:80px;
-	line-height:80px;
+	align-items: center;
 	position: relative;
 	transition:.6s;
 }
-.txt > h2 {
-	position:relative;
+.txt > h2 > i {
+	margin-left:10px;
 }
-.txt>h2::after {
+.txt > h2::after {
 	content:'';
 	position:absolute;
 	width:0;
@@ -124,10 +131,182 @@ main>.gif>img {
 	opacity:0;
 	width:100%;
 	overflow:hidden;
+	padding:20px;
 }
-.opentxt {
+.p-txt {
+	font-size:16px;
+}
+.p-txt ul {
+	margin:20px 50px;
+}
+.p-txt ul > li {
+	margin:10px 0;
+}
+.p-txt a {
+	color:var(--darkblue);
+}
+.opentxt p {
+	margin:20px;
+	font-size:20px;
+	line-height:1.5em;
+}
+.opentxt h3 {
+	margin:30px 20px -35px 20px;
+}
+#mand-med-ipad > .txt > .opentxt {
 	opacity:1;
 	border-radius:15px;
-	height:400px !important;
+	height:800px !important;
+	z-index:4;
 	width: 180% !important;
+}
+#liggende-par > .txt > .opentxt {
+	opacity:1;
+	border-radius:15px;
+	height:300px !important;
+	width: 180% !important;
+}
+
+.anmeldelser {
+	position:absolute;
+	top:100vh;
+	display:flex;
+	width:100%;
+	justify-content: center;
+	flex-direction: column;
+	align-items:center;
+}
+.anmeldelser > div {
+	display:flex;
+	justify-content: space-around;
+}
+.anmeldelser > div >div> img {
+	width:250px;
+	position: absolute;
+	top:-20px;
+	left:-25px;
+}
+.anmeldelser >h2 {
+	font-family:var(--heading);
+	display:flex;
+	background-color:var(--white);
+	border:6px solid var(--orange);
+	border-radius:15px;
+	justify-content: center;
+	font-size:40px;
+	color:var(--greenQ);
+	height:80px;
+	align-items: center;
+	position: relative;
+	transition:.6s;
+	padding:0 60px;
+}
+.anmeldelser > div > div {
+	width:200px;
+	height:200px;
+	position:relative;
+	margin:20px;
+	background-color:var(--white);
+	border-radius:100%;
+}
+.anmeldelse {
+	background:url('../img/talebobbel.svg') no-repeat;
+	background-size:100%;
+	margin-top:120px;
+	margin-left:-40px;
+	padding:50px 40px;
+	overflow:hidden;
+	font-size:20px;
+		width:400px;
+			display:flex;
+			justify-content: center;
+			align-items:center;
+			position:relative;
+	opacity:0;
+	font-style:italic;
+	z-index:4;
+}
+#an1 {
+	height:400px;
+	padding:40px 60px;
+	margin-left:-30px;
+}
+
+#an2 {
+	height:300px;
+	width:300px;
+	margin-top:140px;
+	margin-left:0px;
+}
+#an3 {
+	height:500px;
+	width:500px;
+
+	margin-top:120px;
+	margin-left:-60px;
+	padding:40px 60px;
+}
+.anmeldelse:first-child {
+	height:2500px;
+}
+.openanmeldelse{
+		opacity:1;
+}
+footer {
+	width:100%;
+	display:flex;
+	justify-content: space-around;
+	height:40vh;
+	z-index:4;
+	position:relative;
+}
+footer > div {
+	width:25%;
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+}
+footer > div > h3 {
+	padding:10px 25px;
+	border-radius:15px;
+	font-family:var(--heading);
+	color:var(--greenQ);
+	font-size:32px;
+	width:250px;
+	margin-bottom:10px;
+	text-align:center;
+	border:4px solid var(--orange);
+}
+footer h4 {
+	color:var(--greenQ);
+	text-align:left;
+	width:250px;
+	font-weight:700;
+	font-size:21px;
+	margin:10px;
+	margin-bottom:-10px;
+}
+footer > div > p {
+	font-size:20px;
+	width:300px;
+	margin:10px 0 10px 50px;
+}
+footer > div > p > a {
+	font-size:20px;
+	float:right;
+}
+footer > div > div {
+	display:flex;
+	justify-content: center;
+
+}
+footer > div a {
+	text-decoration: none;
+	color:var(--black);
+	font-size:32px;
+	transition:.2s;
+	margin:0 20px;
+}
+footer > div a:hover {
+	color:var(--orange);
 }
